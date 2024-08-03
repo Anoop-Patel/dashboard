@@ -2,7 +2,32 @@
 *{
   box-sizing: border-box;
 }
-.main{
-  height: 100vh;
+.app-container {
   display: flex;
-}
+  height: 100vh; }
+
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-area {
+    flex-grow: 5px;
+    padding: 5px 10px;
+    background-color: black; 
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .breadcumb{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 24px;
+    font-weight: 650;
+  }
