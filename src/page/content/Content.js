@@ -1,5 +1,7 @@
 import React from 'react'
 import dummyicon from "../../asset/image/javascript.png";
+import ActivityChart from '../ActivityChart';
+import RecentOrders from '../RecentOrders';
 
 const Content = () => {
   return (
@@ -24,10 +26,16 @@ const Content = () => {
           </div>
         ))}
      </div>
- <div className='graph-container'> </div>
- <div className='table-container'> </div>
-
-
+ <div className='graph-container'>
+    <div className='heading'>
+        <span className='title'> Activity</span>
+        <div className='button'>we </div>
+         </div>
+    <ActivityChart/>
+     </div>
+ <div className='table-container'>
+<RecentOrders/>
+</div>
 
       </div>
   <div className='feedback-container'> </div>
